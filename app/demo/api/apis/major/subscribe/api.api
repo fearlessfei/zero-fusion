@@ -1,0 +1,25 @@
+syntax = "v1"
+
+info(
+	desc:    "订阅相关"
+	author:  "sf"
+	contactURL: "https://github.com/fearlessfei/zero-fusion"
+    version: "v1"
+)
+
+import (
+	"subscribe.api"
+)
+
+@server(
+    tags: "订阅相关"
+	group: subscribe
+	prefix: v1
+)
+service major {
+    @doc(
+      summary: "订阅消息"
+    )
+	@handler subscribe
+	post /subscribe (SubscribeMessageReq) returns (SubscribeMessageResp)
+}

@@ -1,0 +1,16 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="demo-major" type="GoApplicationRunConfiguration" factoryName="Go Application">
+    <module name="zero-fusion" />
+    <working_directory value="$PROJECT_DIR$/../zero-fusion" />
+    <parameters value="-f $ProjectFileDir$/app/demo/api/etc/dev.yaml" />
+    <EXTENSION ID="com.fapiko.jetbrains.plugins.better_direnv.runconfigs.GolandRunConfigurationExtension">
+      <option name="DIRENV_ENABLED" value="false" />
+      <option name="DIRENV_TRUSTED" value="false" />
+    </EXTENSION>
+    <kind value="PACKAGE" />
+    <package value="zero-fusion/app/demo/api/cmd/major" />
+    <directory value="$PROJECT_DIR$" />
+    <filePath value="$PROJECT_DIR$/app/demo/api/cmd/major/main.go" />
+    <method v="2" />
+  </configuration>
+</component>

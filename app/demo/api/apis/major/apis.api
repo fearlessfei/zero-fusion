@@ -1,0 +1,14 @@
+syntax = "v1"
+
+info (
+	title:       "主服务api"
+	description: "订阅主服务api"
+	author:  "sf"
+	contactURL: "https://github.com/fearlessfei/zero-fusion"
+	schemes:     "http"
+)
+
+import (
+	// 订阅
+	"subscribe/api.api"
+)

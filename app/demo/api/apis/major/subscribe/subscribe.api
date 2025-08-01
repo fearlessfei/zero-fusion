@@ -1,0 +1,19 @@
+syntax = "v1"
+
+info(
+	desc: "订阅相关"
+	author:  "sf"
+	contactURL: "https://github.com/fearlessfei/zero-fusion"
+)
+
+type (
+	// 订阅消息请求
+	SubscribeMessageReq {
+		Group string `json:"group"` // 订阅组
+	}
+
+	// 订阅消息响应
+	SubscribeMessageResp {
+		Success  bool `json:"success"`
+	}
+)
