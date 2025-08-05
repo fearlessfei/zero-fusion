@@ -8,5 +8,5 @@ import (
 
 // registerOnceTask 注册一次性任务
 func registerOnceTask(ws *worker.WorkerServer, svcCtx *svc.ServiceContext) {
-	ws.RegisterTask(&oncetaskdemo.DemoLogic{SvcCtx: svcCtx})
+	ws.RegisterTask(oncetaskdemo.NewDemoLogic(svcCtx))
 }

@@ -8,6 +8,5 @@ import (
 
 // registerPeriodicTask 注册周期性定时任务
 func registerPeriodicTask(ws *worker.WorkerServer, svcCtx *svc.ServiceContext) {
-	// demo 任务
-	ws.RegisterTask(&periodictaskdemo.DemoLogic{SvcCtx: svcCtx})
+	ws.RegisterTask(periodictaskdemo.NewDemoLogic(svcCtx))
 }
